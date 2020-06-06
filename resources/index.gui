@@ -1,6 +1,14 @@
 <svg>
+  <gradientRect width="100%" height="100%"
+    gradient-type="linear"
+    gradient-x1="0" gradient-y1="50"
+    gradient-x2="0" gradient-y2="100%-50"
+    gradient-color1="#EABFB9" gradient-color2="#B86B77" />
   	<text id="myClock" class="font large"/>
   	<text id="myHeartRate" class="font small"/>
   	<text id="mySteps" class="font small"/>
   	<text id="myDistance" class="font xsmall"/>
+    <image href="img/heart.png" id="imgHeart" class="icon" />
+    <image href="img/foot.png" id="imgFoot" class="icon" />
+    <image href="img/sakura_s.png" id="imgSakura"/>
 </svg>

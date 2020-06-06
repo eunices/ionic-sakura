@@ -5,10 +5,7 @@ import clock from "clock";                     // clock
 import { display } from "display";             // display on/ off
 import { HeartRateSensor } from "heart-rate";  // heart rate
 import { me as appbit } from "appbit";         // user permissions
-import { today } from "user-activity";         // 
-
-import { me as appbit } from "appbit";
-import { goals } from "user-activity";
+import { today } from "user-activity";         // today's stats
 
 import * as util from "../common/utils";
 
@@ -65,7 +62,7 @@ if (appbit.permissions.granted("access_activity")) {
 	let steps = today.adjusted.steps;
 	let distance = today.adjusted.distance/1000;
 
-	mySteps.text = steps;
+	mySteps.text = `${steps}`;
 	myDistance.text = `${distance} km`;
 
 	console.log(`${steps} steps`);
