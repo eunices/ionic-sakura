@@ -1,14 +1,45 @@
 .background {
-    viewport-fill: red;
-  }
-  
-  #myLabel {
-    font-size: 80;
-    font-family: System-Bold;
-    text-length: 32;
-    text-anchor: middle;
-    x: 50%;
-    y: 50%+40;
+    viewport-fill: black;
+}
+
+.font {
     fill: white;
-  }
-  
+    font-family: Seville-Bold;
+    text-anchor: middle;
+}
+
+.large {
+    font-size: 80;
+}
+
+.small {
+    font-size: 30;
+}
+
+.xsmall {
+    font-size: 15;
+}
+
+#myClock {
+    text-length: 32;
+    x: 50%;
+    y: 50%+20;
+}
+
+#myHeartRate {
+    text-length: 3;
+    x: 20%;
+    y: 83%;
+}
+
+#mySteps {
+    text-length: 6;
+    x: 70%;
+    y: 80%;
+}
+
+#myDistance {
+    text-length: 9;
+    x: 70%;
+    y: 87%;
+}

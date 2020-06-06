@@ -1,3 +1,6 @@
-<svg class="background">
-  <text id="myLabel" />
+<svg>
+  	<text id="myClock" class="font large"/>
+  	<text id="myHeartRate" class="font small"/>
+  	<text id="mySteps" class="font small"/>
+  	<text id="myDistance" class="font xsmall"/>
 </svg>
