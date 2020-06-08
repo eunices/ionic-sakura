@@ -6,9 +6,21 @@ export function zeroPad(i) {
 	return i;
 }
 
+export function getStringDay(num) {
+  switch (num) {
+	  case 0: return "Mon";
+	  case 1: return "Tue";
+	  case 2: return "Wed";
+	  case 3: return "Thu";
+	  case 4: return "Fri";
+	  case 5: return "Sat";
+	  case 6: return "Sun";
+  }
+}
+
 
 // Convert a number to a special monospace number
-export function monoDigits(num, pad=true) {
+export function monoDigits(num, pad = true) {
 	let monoNum = '';
 	if (typeof num === 'number') {
 	  num |= 0;

@@ -1,3 +1,7 @@
+# Fitbit Watch Face
+
+![](screenshot.png)
+
 Features:
 - Add seconds
 - Have distance, steps, heart rate

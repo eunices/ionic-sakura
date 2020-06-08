@@ -16,10 +16,14 @@ clock.granularity = "seconds";
 
 // Get a handle on the <text> element
 const myClock = document.getElementById("myClock");
+const myDate = document.getElementById("myDate");
+const myDay = document.getElementById("myDay");
+
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
 	let today = evt.date;
+  
 	let hours = today.getHours();
 	if (preferences.clockDisplay === "12h") {
 		// 12h format
@@ -28,9 +32,17 @@ clock.ontick = (evt) => {
 		// 24h format
 		hours = util.monoDigits(hours);
 	}
-	let mins = util.monoDigits(today.getMinutes());
+	
+  let mins = util.monoDigits(today.getMinutes());
 	let sec = util.monoDigits(today.getSeconds());
 	myClock.text = `${hours}:${mins}:${sec}`;
+  
+  let date = util.monoDigits(today.getDate());
+  let monthNum  = util.monoDigits(today.getMonth());
+  myDate.text = `${date}.${monthNum}`;
+  
+  let day = util.getStringDay(today.getDay());
+  myDay.text = `${day}`;
 }
 
 
